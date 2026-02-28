@@ -2,7 +2,7 @@ import React from "react";
 
 const HomeSectionCard = () => {
   return (
-    <div className="cursor-pointer flex flex-col items-center bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden w-60 mx-3">
+    <div className="w-full cursor-pointer flex flex-col items-center bg-white rounded-lg shadow-sm overflow-hidden border">
       
       {/* Image */}
       <div className="h-64 w-full overflow-hidden">
