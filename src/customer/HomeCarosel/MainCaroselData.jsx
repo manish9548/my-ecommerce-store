@@ -1,4 +1,4 @@
-export const mainCarouselData = [
+export const mainCaroselData = [
   {
     image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1920&auto=format&fit=crop",
     path: "/women/clothing/lehenga_choli",

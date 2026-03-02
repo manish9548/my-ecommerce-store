@@ -1,11 +1,11 @@
 import React from "react";
-import { mainCarouselData } from "./MainCaroselData";
+import { mainCaroselData } from "./MainCaroselData";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
-const MainCarousel = () => {
+const MainCarosel = () => {
 
-  const items = mainCarouselData.map((item, index) => (
+  const items = mainCaroselData.map((item, index) => (
     <img
       key={index}
       src={item.image}
@@ -27,4 +27,4 @@ const MainCarousel = () => {
   );
 };
 
-export default MainCarousel;
+export default MainCarosel;

@@ -1,6 +1,17 @@
 @import "tailwindcss";
 
+/* Vite ka default max-width aur margin hatao */
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left; /* Center se hata kar left karein */
+}
+
 html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
   overflow-x: hidden;
 }
 
