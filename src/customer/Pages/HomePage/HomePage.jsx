@@ -12,8 +12,7 @@ const HomePage = () => {
             {/* Removing flex-col and justify-center allows the carousels to take full width */}
             <div className="space-y-10 py-20 px-5 lg:px-10">
                 <HomeSectionCarosel data={mens_kurta} sectionName={"Men's Kurta"} />
-                <HomeSectionCarosel data={mens_kurta} sectionName={"Men's Shoes"} />
-                <HomeSectionCarosel data={mens_kurta} sectionName={"Men's Shirts"} />
+                
             </div>
         </div>
     );

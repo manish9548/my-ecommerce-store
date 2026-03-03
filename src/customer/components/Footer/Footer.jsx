@@ -1,65 +1,68 @@
 import React from "react";
+import { Grid, Typography, Button, Box } from "@mui/material";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-gray-300 mt-16">
-      <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <Box sx={{ bgcolor: "black", color: "white", mt: 10, py: 5 }}>
+      <Grid 
+        container 
+        // Ye prop sections ko dur-dur phailane ke liye hai
+        justifyContent="space-around" 
+        // Columns ke beech gap ke liye
+        spacing={4} 
+        sx={{ px: 5 }}
+      >
         
-        {/* Company */}
-        <div>
-          <h2 className="text-white text-lg font-semibold mb-4">Company</h2>
-          <ul className="space-y-2">
-            <li className="hover:text-white cursor-pointer">About</li>
-            <li className="hover:text-white cursor-pointer">Blog</li>
-            <li className="hover:text-white cursor-pointer">Jobs</li>
-            <li className="hover:text-white cursor-pointer">Press</li>
-            <li className="hover:text-white cursor-pointer">Partners</li>
-          </ul>
-        </div>
+        {/* Section 1: Company */}
+        <Grid item xs={12} sm={6} md={2.4}>
+          <Typography variant="h6" sx={{ pb: 3, fontWeight: 'bold' }}>Company</Typography>
+          <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
+            <Button sx={{ color: 'gray', justifyContent: 'flex-start', p: 0 }}>About</Button>
+            <Button sx={{ color: 'gray', justifyContent: 'flex-start', p: 0 }}>Blog</Button>
+            <Button sx={{ color: 'gray', justifyContent: 'flex-start', p: 0 }}>Jobs</Button>
+          </Box>
+        </Grid>
 
-        {/* Solutions */}
-        <div>
-          <h2 className="text-white text-lg font-semibold mb-4">Solutions</h2>
-          <ul className="space-y-2">
-            <li className="hover:text-white cursor-pointer">Marketing</li>
-            <li className="hover:text-white cursor-pointer">Analytics</li>
-            <li className="hover:text-white cursor-pointer">Commerce</li>
-            <li className="hover:text-white cursor-pointer">Insights</li>
-            <li className="hover:text-white cursor-pointer">Support</li>
-          </ul>
-        </div>
+        {/* Section 2: Solutions */}
+        <Grid item xs={12} sm={6} md={2.4}>
+          <Typography variant="h6" sx={{ pb: 3, fontWeight: 'bold' }}>Solutions</Typography>
+          <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
+            <Button sx={{ color: 'gray', justifyContent: 'flex-start', p: 0 }}>Marketing</Button>
+            <Button sx={{ color: 'gray', justifyContent: 'flex-start', p: 0 }}>Analytics</Button>
+          </Box>
+        </Grid>
 
-        {/* Documentation */}
-        <div>
-          <h2 className="text-white text-lg font-semibold mb-4">
-            Documentation
-          </h2>
-          <ul className="space-y-2">
-            <li className="hover:text-white cursor-pointer">Guides</li>
-            <li className="hover:text-white cursor-pointer">API Status</li>
-          </ul>
-        </div>
+        {/* Section 3: Documentation */}
+        <Grid item xs={12} sm={6} md={2.4}>
+          <Typography variant="h6" sx={{ pb: 3, fontWeight: 'bold' }}>Documentation</Typography>
+          <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
+            <Button sx={{ color: 'gray', justifyContent: 'flex-start', p: 0 }}>Guides</Button>
+            <Button sx={{ color: 'gray', justifyContent: 'flex-start', p: 0 }}>API Status</Button>
+          </Box>
+        </Grid>
 
-        {/* Legal */}
-        <div>
-          <h2 className="text-white text-lg font-semibold mb-4">Legal</h2>
-          <ul className="space-y-2">
-            <li className="hover:text-white cursor-pointer">Claim</li>
-            <li className="hover:text-white cursor-pointer">Privacy</li>
-            <li className="hover:text-white cursor-pointer">Terms</li>
-          </ul>
-        </div>
+        {/* Section 4: Legal */}
+        <Grid item xs={12} sm={6} md={2.4}>
+          <Typography variant="h6" sx={{ pb: 3, fontWeight: 'bold' }}>Legal</Typography>
+          <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
+            <Button sx={{ color: 'gray', justifyContent: 'flex-start', p: 0 }}>Privacy</Button>
+            <Button sx={{ color: 'gray', justifyContent: 'flex-start', p: 0 }}>Terms</Button>
+          </Box>
+        </Grid>
 
-      </div>
+       
 
-      {/* Bottom Line */}
-      <div className="border-t border-gray-700">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center text-sm">
-          <p>© 2026 My Company. All rights reserved.</p>
-          <p className="text-gray-500">Made with ❤️ by Manish</p>
-        </div>
-      </div>
-    </footer>
+      </Grid>
+       {/* Bottom Line - Ye hamesha niche aayega kyunki ye xs={12} hai */}
+        <Grid item xs={12} sx={{ mt: 8, borderTop: '1px solid #333', pt: 3 }}>
+          <Typography variant="body2" align="center" sx={{ color: 'gray' }}>
+            © 2026 My Company. All rights reserved.
+          </Typography>
+          <Typography variant="body2" align="center" sx={{ color: 'gray', mt: 1 }}>
+            Made with ❤️ by Manish
+          </Typography>
+        </Grid>
+    </Box>
   );
 };
 
