@@ -2,7 +2,7 @@ import React from "react";
 import MainCarousel from "../../HomeCarosel/MainCarosel";
 // Check your folder name: Is it "HomeSectionCarosel" or "HomeSectionCarousel"?
 import HomeSectionCarosel from "../../components/HomeSectionCarosel/HomeSectionCarosel"; 
-import { mens_kurta } from "../../../mens_kurta"; 
+import { mens_kurta } from "../../../Data/mens_kurta"
 
 const HomePage = () => {
     return (
